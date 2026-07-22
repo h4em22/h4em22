@@ -39,6 +39,10 @@
 - **LogAnalyzer(rsyslog)** 기반 실시간 침입 탐지(로그인 성공/실패 이벤트 등) 구현
 
 ### 🎯 3차(최종) 프로젝트 & 팀 자체 워게임
+> 팀 자체 제작 웹해킹 워게임: [8low8lowme](https://github.com/hyemya/3rd_project_wargame)
+
+![8low8lowme wargame main page](./assets/3rd_project_wargame.png)
+
 - 팀 자체 제작 워게임에 직접 문제 5개 출제 (Android Pattern Lock, Guide NPC, ALZ 파일 검증기 File Upload, Hidden Keys, Reflected XSS)
 - 타 팀 + 멘토 출제 문제 총 100문제 전체 풀이, **팀 순위 2등**
 - 워게임 파트 배점 20% **만점 획득**
