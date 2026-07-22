@@ -43,7 +43,6 @@
 ### 🚩 2차 프로젝트 팀 자체 제작 CTF VM — EasyHajo CTF
 > HRSMS와는 별도로, 같은 2차 프로젝트 기간에 팀에서 제작한 CTF 취약 VM
 
-- 팀 자체 제작 취약 VM 머신 & 워크스루: [2nd-project-ctf-vm](./2nd-project-ctf-vm)
 - 9개 팀 출제 문제(팀당 User/Root 2플래그, 총 18점) 중 **15점 획득**
 
 ### 🏥 1차 프로젝트 — 차세대 통합 병원 정보 시스템 (S-HIS)
