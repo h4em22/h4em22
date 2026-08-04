@@ -22,8 +22,15 @@
 
 ## 🚀 Projects
 
-### 🎯 3차(최종) 프로젝트
-> 진행 중 (Coming soon)
+### 🎯 3차(최종) 프로젝트 — Operation Follow Me (FM 8+)
+> 5인 팀 프로젝트 (팀장) · 2026.07.23 ~ 08.04
+
+- 2025년 4월 **SKT HSS 침해사고**(USIM 인증키 평문 저장, 탐지까지 22시간 지연 등)를 근본원인 관점으로 재구성해 가상 통신사 인프라(FM 8+) 설계에 반영
+- **pfSense(FW) → Suricata(IDS/IPS) → ModSecurity(WAF) → ELK Stack(SIEM)** 실시간 탐지·차단·통합관제 파이프라인 구축
+- Red Team 모의해킹으로 SQL Injection, Session Fixation, Stored XSS, IDOR, Unrestricted File Upload **5건 취약점 발견, 전건(100%) 실증** (Critical 3 · High 2)
+- Blue Team 관제 검증: 커스텀 탐지·차단 룰 18종 적용 중 **16종 실제 차단 확인**, SIEM 대시보드로 공격 탐지 전 과정 가시화 및 탐지 사각지대 분석
+- KISA 가이드 기반 **U-01~U-67 서버 점검 자동화 스크립트** 직접 개발, 발견된 취약점 9건 **전건 조치(100%)**
+- **BPFDoor 기반 리버스쉘 백도어** 정적/동적 분석(Ghidra, VirusTotal, Wireshark, strace)으로 행위·IOC 도출 및 대응방안 수립
 
 ### 🏴 워게임
 - 팀 자체 제작 워게임에 직접 문제 5개 출제 (Android Pattern Lock, Guide NPC, ALZ 파일 검증기 File Upload, Hidden Keys, Reflected XSS)
