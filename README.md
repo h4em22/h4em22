@@ -38,7 +38,7 @@
 - 워게임 파트 배점 20% **만점 획득**
 
 ### 🥇 2차 프로젝트 — Hotel Reservation Security Monitoring System (HRSMS)
-> 5인 팀 프로젝트 (팀장/PM) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
+> 5인 팀 프로젝트 (팀장) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
 
 - DMZ / Internal Subzone / SOC 관제망으로 분리된 인프라 설계 및 구축
 - **GNS3, pfSense, Suricata**로 경계 방어 및 침입 탐지 체계 구성
