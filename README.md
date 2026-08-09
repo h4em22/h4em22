@@ -24,6 +24,7 @@
 
 ### 🥇 3차(최종) 프로젝트 — Operation Follow Me (FM 8+)
 > 5인 팀 프로젝트 (팀장) · 2026.07.23 ~ 08.04 · **팀 1등 수상** (10팀 中)
+> 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project)
 
 - 2025년 4월 **SKT HSS 침해사고**(USIM 인증키 평문 저장, 탐지까지 22시간 지연 등)를 근본원인 관점으로 재구성해 가상 통신사 인프라(FM 8+) 설계에 반영
 - **pfSense(FW) → Suricata(IDS/IPS) → ModSecurity(WAF) → ELK Stack(SIEM)** 실시간 탐지·차단·통합관제 파이프라인 구축
@@ -33,12 +34,15 @@
 - **BPFDoor 기반 리버스쉘 백도어** 정적/동적 분석(Ghidra, VirusTotal, Wireshark, strace)으로 행위·IOC 도출 및 대응방안 수립
 
 ### 🏴 워게임
+> 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project_wargame)
+
 - 팀 자체 제작 워게임에 직접 문제 5개 출제 (Android Pattern Lock, Guide NPC, ALZ 파일 검증기 File Upload, Hidden Keys, Reflected XSS)
 - 타 팀 + 멘토 출제 문제 총 100문제 전체 풀이, **팀 순위 2등**
 - 워게임 파트 배점 20% **만점 획득**
 
 ### 🥇 2차 프로젝트 — Hotel Reservation Security Monitoring System (HRSMS)
 > 5인 팀 프로젝트 (팀장) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
+> 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project)
 
 - DMZ / Internal Subzone / SOC 관제망으로 분리된 인프라 설계 및 구축
 - **GNS3, pfSense, Suricata**로 경계 방어 및 침입 탐지 체계 구성
@@ -48,10 +52,13 @@
 - cron 기반 보안 점검 자동화 스크립트 운영 (매일 13시 실행)
 
 ### 🚩 2차 프로젝트 팀 자체 제작 CTF — EasyHajo CTF
+> 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project_CTF)
+
 - 9개 팀 출제 문제(팀당 User/Root 2플래그, 총 18점) 중 **15점 획득**
 
 ### 🏥 1차 프로젝트 — 차세대 통합 병원 정보 시스템 (S-HIS)
 > 4인 팀 프로젝트 (팀장) · 2026.04.13 ~ 04.23
+> 🔗 [저장소 바로가기](https://github.com/hyemya/1st_project)
 
 - 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 아키텍처 설계
 - **IPsec VPN** 및 ACL 보안 정책 수립, 최소 권한 계정 관리
