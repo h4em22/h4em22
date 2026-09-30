@@ -29,9 +29,10 @@
 - **담당**: 모의해킹 수행, BPFDoor 동적 분석, 전체 일정·보고서·발표 총괄
 - OWASP Top 10 기반 SQL Injection, Session Fixation, Stored XSS, IDOR, Unrestricted File Upload **5건 선정 및 전건(100%) 실증**, CWE 기준 근본 원인 분석 (Prepared Statement 미적용, `session_regenerate_id` 누락, 출력 인코딩 부재, 인가 검증 부재, 서버측 파일 검증 부재)
 - **Session Fixation + Stored XSS 공격 체인**으로 무인증 관리자 세션 탈취 실증 → 개별 취약점보다 연계 시 피해가 증폭됨을 증명
-- **BPFDoor 동적 분석**: VirtualBox 격리 환경(Ubuntu/Kali)에서 Scapy 매직 패킷 1회로 root 리버스쉘 획득 재현
-  - `ss -tlnp`/`netstat`에는 안 보이는 백도어를 `ss -0pb`(raw 소켓)·`ps`·tcpdump/Wireshark로 탐지
-  - IDS 시그니처(`content:"MAGIC"; offset:54;`), auditd/eBPF raw 소켓 감시, YARA 주기 스캔 등 대응 권고안 작성
+- **BPFDoor 동적 분석**: VirtualBox 격리망(피해자 Ubuntu / 공격자 Kali, 스냅샷 확보)에서 백도어 행위 재현·탐지 검증
+  - `AF_PACKET`/`SOCK_RAW`로 리스닝 포트 없이 잠복하는 구조 확인, Scapy로 TCP 옵션을 제거해 페이로드 오프셋을 54바이트로 고정한 매직 패킷 1회 전송으로 root 리버스쉘 획득 재현
+  - `ss -tlnp`/`netstat`에는 안 잡히는 백도어를 `ss -0pb`(raw 소켓)·`ps`·tcpdump/Wireshark(매직 바이트 `MAGIC`)·strace(시스템콜 흐름)로 탐지 — 포트 점검의 사각지대를 소켓·프로세스·트래픽·시스템콜 레벨에서 보완
+  - 대응 권고안 작성: IDS 시그니처(`content:"MAGIC"; offset:54;`), auditd/eBPF raw 소켓 생성 감시, IoC 해시 기반 YARA 주기 스캔, 최소 권한 원칙
 
 ### 🏴 워게임
 > 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project_wargame)
