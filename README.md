@@ -25,6 +25,7 @@
 > 5인 팀 프로젝트 (팀장) · 2026.07.23 ~ 08.04 · **팀 1등 수상** (10팀 中)
 > 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project)
 
+- **개요**: 2025년 4월 S사 HSS 침해사고를 근본 원인 관점으로 재구성해, 가상 통신사 인프라(FM 8+)를 대상으로 모의해킹(Red Team)과 보안 관제(Blue Team)를 수행한 정보보호 진단 프로젝트
 - **담당**: 모의해킹 수행, BPFDoor 동적 분석, 전체 일정·보고서·발표 총괄
 - OWASP Top 10 기반 SQL Injection, Session Fixation, Stored XSS, IDOR, Unrestricted File Upload **5건 선정 및 전건(100%) 실증**, CWE 기준 근본 원인 분석 (Prepared Statement 미적용, `session_regenerate_id` 누락, 출력 인코딩 부재, 인가 검증 부재, 서버측 파일 검증 부재)
 - **Session Fixation + Stored XSS 공격 체인**으로 무인증 관리자 세션 탈취 실증 → 개별 취약점보다 연계 시 피해가 증폭됨을 증명
@@ -41,9 +42,10 @@
 - 워게임 파트 배점 20% **만점 획득**
 
 ### 🥇 2차 프로젝트 — Hotel Reservation Security Monitoring System (HRSMS)
-> 5인 팀 프로젝트 (팀장/PM) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
+> 5인 팀 프로젝트 (팀장) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
 > 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project)
 
+- **개요**: 호텔 예약 웹 서비스를 대상으로 경계 방어·로그 통합 관제 인프라를 구축하고, 모의해킹으로 취약점을 진단한 보안 관제 프로젝트
 - **담당**: 취약점 설계·모의해킹, PMM 구축, 전체 일정 관리·보고서·발표
 - 모의해킹으로 SQL Injection(인증우회), Open Redirection, Session Fixation, Stored XSS, IDOR, SSRF **6건 발견 및 근본 원인 분석** — 공통 원인을 "클라이언트 입력을 신뢰한 설계"(입력 검증·출력 인코딩·인가 검증 누락)로 정리
 - **PMM(Percona Monitoring)** 구축으로 DB·인프라 성능 관제
@@ -59,6 +61,7 @@
 > 4인 팀 프로젝트 (팀장) · 2026.04.13 ~ 04.23
 > 🔗 [저장소 바로가기](https://github.com/hyemya/1st_project)
 
+- **개요**: 망 분리 기반 3-Tier 구조의 병원 정보 시스템을 설계·구축하고, 접근 통제·로그 관제로 보안을 적용한 인프라 구축 프로젝트
 - **담당**: 인프라 아키텍처 및 로그 엔지니어링, 프로젝트 총괄
 - 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 구조 설계 주도
 - Apache–MariaDB 연동: DB 접근을 Web 서버 IP의 SELECT/INSERT로만 허용, admin/doctor/medical 계정 분리로 **최소 권한 원칙** 적용
