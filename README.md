@@ -37,7 +37,7 @@
 > 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project_wargame)
 
 - 팀 워게임 10문제 중 **Problem 05~09, 5문제 직접 설계·출제** — 각 문제를 실제 CWE 유형에 대응하도록 설계
-  - Android Pattern Lock(CWE-307) · Guide NPC 쿠키 변조(CWE-565) · ALZ 파일 검증기 폴리글랏 업로드 우회(CWE-434) · Hidden Keys LSB 스테가노그래피(CWE-200) · Reflected XSS 클라이언트 검증 우회(CWE-602)
+  - Android Pattern Lock · Guide NPC 쿠키 변조 · ALZ 파일 검증기 · Hidden Keys LSB 스테가노그래피 · Reflected XSS 클라이언트 검증 우회
 - 타 팀 + 멘토 출제 문제 총 100문제 전체 풀이, **팀 순위 2등**
 - 워게임 파트 배점 20% **만점 획득**
 
