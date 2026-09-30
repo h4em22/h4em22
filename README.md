@@ -25,43 +25,45 @@
 > 5인 팀 프로젝트 (팀장) · 2026.07.23 ~ 08.04 · **팀 1등 수상** (10팀 中)
 > 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project)
 
-- 2025년 4월 **S사 HSS 침해사고**(USIM 인증키 평문 저장, 탐지까지 22시간 지연 등)를 근본원인 관점으로 재구성해 가상 통신사 인프라(FM 8+) 설계에 반영
-- **pfSense(FW) → Suricata(IDS/IPS) → ModSecurity(WAF) → ELK Stack(SIEM)** 실시간 탐지·차단·통합관제 파이프라인 구축
-- Red Team 모의해킹으로 SQL Injection, Session Fixation, Stored XSS, IDOR, Unrestricted File Upload **5건 취약점 발견, 전건(100%) 실증** (Critical 3 · High 2)
-- Blue Team 관제 검증: 커스텀 탐지·차단 룰 18종 적용 중 **16종 실제 차단 확인**, SIEM 대시보드로 공격 탐지 전 과정 가시화 및 탐지 사각지대 분석
-- KISA 가이드 기반 **U-01~U-67 서버 점검 자동화 스크립트** 직접 개발, 발견된 취약점 9건 **전건 조치(100%)**
-- **BPFDoor 기반 리버스쉘 백도어** 정적/동적 분석(Ghidra, VirusTotal, Wireshark, strace)으로 행위·IOC 도출 및 대응방안 수립
+- **담당**: 모의해킹 수행, BPFDoor 동적 분석, 전체 일정·보고서·발표 총괄
+- OWASP Top 10 기반 SQL Injection, Session Fixation, Stored XSS, IDOR, Unrestricted File Upload **5건 선정 및 전건(100%) 실증**, CWE 기준 근본 원인 분석 (Prepared Statement 미적용, `session_regenerate_id` 누락, 출력 인코딩 부재, 인가 검증 부재, 서버측 파일 검증 부재)
+- **Session Fixation + Stored XSS 공격 체인**으로 무인증 관리자 세션 탈취 실증 → 개별 취약점보다 연계 시 피해가 증폭됨을 증명
+- **BPFDoor 동적 분석**: VirtualBox 격리 환경(Ubuntu/Kali)에서 Scapy 매직 패킷 1회로 root 리버스쉘 획득 재현
+  - `ss -tlnp`/`netstat`에는 안 보이는 백도어를 `ss -0pb`(raw 소켓)·`ps`·tcpdump/Wireshark로 탐지
+  - IDS 시그니처(`content:"MAGIC"; offset:54;`), auditd/eBPF raw 소켓 감시, YARA 주기 스캔 등 대응 권고안 작성
 
 ### 🏴 워게임
 > 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project_wargame)
 
-- 팀 자체 제작 워게임에 직접 문제 5개 출제 (Android Pattern Lock, Guide NPC, ALZ 파일 검증기 File Upload, Hidden Keys, Reflected XSS)
+- 팀 워게임 10문제 중 **Problem 05~09, 5문제 직접 설계·출제** — 각 문제를 실제 CWE 유형에 대응하도록 설계
+  - Android Pattern Lock(CWE-307) · Guide NPC 쿠키 변조(CWE-565) · ALZ 파일 검증기 폴리글랏 업로드 우회(CWE-434) · Hidden Keys LSB 스테가노그래피(CWE-200) · Reflected XSS 클라이언트 검증 우회(CWE-602)
 - 타 팀 + 멘토 출제 문제 총 100문제 전체 풀이, **팀 순위 2등**
 - 워게임 파트 배점 20% **만점 획득**
 
 ### 🥇 2차 프로젝트 — Hotel Reservation Security Monitoring System (HRSMS)
-> 5인 팀 프로젝트 (팀장) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
+> 5인 팀 프로젝트 (팀장/PM) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
 > 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project)
 
-- DMZ / Internal Subzone / SOC 관제망으로 분리된 인프라 설계 및 구축
-- **GNS3, pfSense, Suricata**로 경계 방어 및 침입 탐지 체계 구성
-- **rsyslog → Graylog** 로그 통합, **GoAccess / PMM**으로 웹·인프라 시각화
-- 모의해킹으로 SQL Injection(인증우회), Open Redirection, 세션 고정, Stored XSS, IDOR, SSRF 등 **6건 취약점 발견 및 전건 조치**
-- KISA 가이드 기반 67개 항목 점검 → 9건 취약점 발견 후 전건 조치, **최종 양호 67/67 달성**
-- cron 기반 보안 점검 자동화 스크립트 운영 (매일 13시 실행)
+- **담당**: 취약점 설계·모의해킹, PMM 구축, 전체 일정 관리·보고서·발표
+- 모의해킹으로 SQL Injection(인증우회), Open Redirection, Session Fixation, Stored XSS, IDOR, SSRF **6건 발견 및 근본 원인 분석** — 공통 원인을 "클라이언트 입력을 신뢰한 설계"(입력 검증·출력 인코딩·인가 검증 누락)로 정리
+- **PMM(Percona Monitoring)** 구축으로 DB·인프라 성능 관제
+- 매일 진행 상황 점검으로 지연을 조기 식별하고 남은 일정·인력 재배분
 
 ### 🚩 2차 프로젝트 팀 자체 제작 CTF — EasyHajo CTF
 > 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project_CTF)
 
-- 9개 팀 출제 문제(팀당 User/Root 2플래그, 총 18점) 중 **15점 획득**
+- 9개 팀 출제 문제(팀당 User/Root 2플래그, 총 18점) 중 **15점 획득** (팀 단위 참가)
+- 백업 파일 노출 → 쿠키 검증 크랙 → 웹쉘 → 커맨드 인젝션 → NOPASSWD sudo 악용으로 Root까지 다단계 침투
 
 ### 🏥 1차 프로젝트 — 차세대 통합 병원 정보 시스템 (S-HIS)
 > 4인 팀 프로젝트 (팀장) · 2026.04.13 ~ 04.23
 > 🔗 [저장소 바로가기](https://github.com/hyemya/1st_project)
 
-- 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 아키텍처 설계
-- **IPsec VPN** 및 ACL 보안 정책 수립, 최소 권한 계정 관리
-- **LogAnalyzer(rsyslog)** 기반 실시간 침입 탐지(로그인 성공/실패 이벤트 등) 구현
+- **담당**: 인프라 아키텍처 및 로그 엔지니어링, 프로젝트 총괄
+- 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 구조 설계 주도
+- Apache–MariaDB 연동: DB 접근을 Web 서버 IP의 SELECT/INSERT로만 허용, admin/doctor/medical 계정 분리로 **최소 권한 원칙** 적용
+- **rsyslog 기반 LogAnalyzer** 로그 서버 구축: WEB/DB/VPN/방화벽 로그 통합, 로그인 성공/실패 구분 및 5회 실패 시 ALERT 자동 생성
+- DNS 구축, LogAnalyzer–포털 연동, UI/UX 디자인 및 발표
 
 ---
 
