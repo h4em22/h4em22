@@ -66,7 +66,8 @@
 - **담당**: 인프라 아키텍처 및 로그 엔지니어링, 프로젝트 총괄
 - 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 구조 설계 주도
 - Apache–MariaDB 연동: DB 접근을 Web 서버 IP의 SELECT/INSERT로만 허용, admin/doctor/medical 계정 분리로 **최소 권한 원칙** 적용
-- **rsyslog 기반 LogAnalyzer** 로그 서버 구축: WEB/DB/VPN/방화벽 로그 통합, 로그인 성공/실패 구분 및 5회 실패 시 ALERT 자동 생성
+- **rsyslog 기반 LogAnalyzer** 로그 서버 구축: WEB/DB/VPN/방화벽 로그 통합, 로그인 성공(INFO)/실패(WARNING) 구분 및 5회 실패 시 ALERT 자동 생성
+- 관리자/의료진 **권한(u_group) 기반 접근 제어** 로그인과 실시간 모니터링 대시보드(접속 IP·활성 사용자 수·강제 로그아웃) 구현
 - DNS 구축, LogAnalyzer–포털 연동, UI/UX 디자인 및 발표
 
 ---
