@@ -51,7 +51,6 @@
 - 모의해킹으로 SQL Injection(인증우회), Open Redirection, Session Fixation, Stored XSS, IDOR, SSRF **6건 발견·근본 원인 분석 후 전건 조치·재검증** — 매개변수화 질의(Prepared Statement), 로그인 시 세션 재발급, HTML 엔티티 인코딩, 소유자 기반 인가 검증, URL 스킴·도메인 화이트리스트 적용
 - 공통 근본 원인을 "클라이언트 입력을 신뢰한 설계"(입력 검증·출력 인코딩·인가 검증 누락)로 정리하고 **모의해킹 결과보고서·시스템 점검보고서 직접 작성**
 - **PMM(Percona Monitoring)** 구축으로 DB·인프라 성능 관제
-- 매일 진행 상황 점검으로 지연을 조기 식별하고 남은 일정·인력 재배분
 
 ### 🚩 2차 프로젝트 팀 자체 제작 CTF — EasyHajo CTF
 > 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project_CTF)
