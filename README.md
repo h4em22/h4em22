@@ -11,6 +11,12 @@
 
 ---
 
+## 📂 Portfolio
+
+🔗 [저장소 바로가기](https://github.com/h4em22/portfolio)
+
+---
+
 ## 🧑‍💻 About Me
 
 - 🎓 대학교 컴퓨터공학과 전공 / 경찰학과 복수전공 (2026.02 3년 조기졸업)
