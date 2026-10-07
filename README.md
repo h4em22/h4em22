@@ -11,12 +11,6 @@
 
 ---
 
-## 📂 Portfolio
-
-🔗 [저장소 바로가기](https://github.com/h4em22/portfolio)
-
----
-
 ## 🧑‍💻 About Me
 
 - 🎓 대학교 컴퓨터공학과 전공 / 경찰학과 복수전공 (2026.02 3년 조기졸업)
@@ -28,7 +22,7 @@
 
 ### 🥇 3차(최종) 프로젝트 — Operation Follow Me (FM 8+)
 > 5인 팀 프로젝트 (팀장) · 2026.07.23 ~ 08.04 · **팀 1등 수상** (10팀 中)
-> 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project)
+> 🔗 [View Repository](https://github.com/hyemya/3rd_project)
 
 - **개요**: 2025년 4월 S사 HSS 침해사고를 근본 원인 관점으로 재구성해, 가상 통신사 인프라(FM 8+)를 대상으로 모의해킹(Red Team)과 보안 관제(Blue Team)를 수행한 정보보호 진단 프로젝트
 - **담당**: 모의해킹 수행, BPFDoor 동적 분석, 전체 일정·보고서·발표 총괄
@@ -40,7 +34,7 @@
   - 대응 권고안 작성: IDS 시그니처(`content:"MAGIC"; offset:54;`), auditd/eBPF raw 소켓 생성 감시, IoC 해시 기반 YARA 주기 스캔, 최소 권한 원칙
 
 ### 🏴 워게임
-> 🔗 [저장소 바로가기](https://github.com/hyemya/3rd_project_wargame)
+> 🔗 [View Repository](https://github.com/hyemya/3rd_project_wargame)
 
 - 팀 워게임 10문제 중 **Problem 05~09, 5문제 직접 설계·출제** — 각 문제를 실제 CWE 유형에 대응하도록 설계
   - Android Pattern Lock · Guide NPC 쿠키 변조 · ALZ 파일 검증기 · Hidden Keys LSB 스테가노그래피 · Reflected XSS 클라이언트 검증 우회
@@ -49,7 +43,7 @@
 
 ### 🥇 2차 프로젝트 — Hotel Reservation Security Monitoring System (HRSMS)
 > 5인 팀 프로젝트 (팀장) · 2026.06.01 ~ 06.19 · **팀 1등 수상** (10팀 中)
-> 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project)
+> 🔗 [View Repository](https://github.com/hyemya/2nd_project)
 
 - **개요**: 호텔 예약 웹 서비스를 대상으로 경계 방어·로그 통합 관제 인프라를 구축하고, 모의해킹으로 취약점을 진단한 보안 관제 프로젝트
 - **담당**: 취약점 설계·모의해킹, PMM 구축, 전체 일정 관리·보고서·발표
@@ -59,14 +53,14 @@
 - **PMM(Percona Monitoring)** 구축으로 DB·인프라 성능 관제
 
 ### 🚩 2차 프로젝트 팀 자체 제작 CTF — EasyHajo CTF
-> 🔗 [저장소 바로가기](https://github.com/hyemya/2nd_project_CTF)
+> 🔗 [View Repository](https://github.com/hyemya/2nd_project_CTF)
 
 - **출제(환경 구축 담당)**: 팀이 공동 설계한 EasyHajo 취약 VM의 환경 구축을 맡아 초기 침투부터 root 권한 획득까지 이어지는 5단계 시나리오 구현 — 백업 파일(`upload.php.bak`) 노출 → 쿠키 검증 우회(Burp Intruder 무차별 대입) → 파일 업로드 웹쉘 → `helper.php` OS 커맨드 인젝션 → NOPASSWD sudo 오용으로 Root
 - **풀이(대회 참가)**: 본인 팀 문제를 제외한 9개 팀 출제 문제(팀당 User/Root 2플래그, 총 18점) 중 **15점 획득**
 
 ### 🏥 1차 프로젝트 — 차세대 통합 병원 정보 시스템 (S-HIS)
 > 4인 팀 프로젝트 (팀장) · 2026.04.13 ~ 04.23
-> 🔗 [저장소 바로가기](https://github.com/hyemya/1st_project)
+> 🔗 [View Repository](https://github.com/hyemya/1st_project)
 
 - **개요**: 망 분리 기반 3-Tier 구조의 병원 정보 시스템을 설계·구축하고, 접근 통제·로그 관제로 보안을 적용한 인프라 구축 프로젝트
 - **담당**: 인프라 아키텍처 및 로그 엔지니어링, 프로젝트 총괄
@@ -79,7 +73,7 @@
 ---
 
 ## 🏆 Certificates & Awards
-> 🔗 [저장소 바로가기](https://github.com/h4em22/certificates)
+> 🔗 [View Repository](https://github.com/h4em22/certificates)
 
 - [이스트캠프] 가디언즈 정보보호 및 보안 인프라 운영 관리 10기 과정 **우수수료생 선정** (2026.08.07)
 - [이스트캠프] 가디언즈 정보보호 및 보안 인프라 운영 관리 10기 과정 **수료증** (2026.08.07)
