@@ -63,7 +63,7 @@
 > 🔗 [View Repository](https://github.com/hyemya/1st_project)
 
 - **개요**: 망 분리 기반 3-Tier 구조의 병원 정보 시스템을 설계·구축하고, 접근 통제·로그 관제로 보안을 적용한 인프라 구축 프로젝트
-- **담당**: 인프라 아키텍처 및 로그 엔지니어링, 프로젝트 총괄
+- **담당**: Apache/DB 연동 및 시스템 강화, 중앙 로그 서버 구축, UI/UX 디자인, 전체 일정 관리·발표
 - 망 분리(의료진/행정/DB로그/DMZ) 기반 3-Tier 구조 설계 주도
 - Apache–MariaDB 연동: DB 접근을 Web 서버 IP의 SELECT/INSERT로만 허용, admin/doctor/medical 계정 분리로 **최소 권한 원칙** 적용
 - **rsyslog 기반 LogAnalyzer** 로그 서버 구축: WEB/DB/VPN/방화벽 로그 통합, 로그인 성공(INFO)/실패(WARNING) 구분 및 5회 실패 시 ALERT 자동 생성
